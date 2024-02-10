@@ -1,7 +1,5 @@
 let CopyGlobal
 
-
-
 function criptografar(texto) {
     // Substituir cada letra conforme as "chaves" de criptografia
     texto = texto.replace(/e/g, "enter");
