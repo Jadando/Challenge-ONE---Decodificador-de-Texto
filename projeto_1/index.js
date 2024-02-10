@@ -1,15 +1,38 @@
 let CopyGlobal
 
-function Criptografar() {
-    var mensagem = document.getElementById("texto").value
-    var codificador = btoa(mensagem)
-    exibirMensagem(codificador)
+
+
+function criptografar(texto) {
+    // Substituir cada letra conforme as "chaves" de criptografia
+    texto = texto.replace(/e/g, "enter");
+    texto = texto.replace(/i/g, "imes");
+    texto = texto.replace(/a/g, "ai");
+    texto = texto.replace(/o/g, "ober");
+    texto = texto.replace(/u/g, "ufat");
+
+    return texto;
+}
+function descriptografar(textoCriptografado) {
+    // Substituir cada "chave" pela letra correspondente
+    textoCriptografado = textoCriptografado.replace(/enter/g, "e");
+    textoCriptografado = textoCriptografado.replace(/imes/g, "i");
+    textoCriptografado = textoCriptografado.replace(/ai/g, "a");
+    textoCriptografado = textoCriptografado.replace(/ober/g, "o");
+    textoCriptografado = textoCriptografado.replace(/ufat/g, "u");
+
+    return textoCriptografado;
 }
 
-function Descriptografar() {
-    var mensagem = document.getElementById("texto").value
-    var decodificador = atob(mensagem)
-    exibirMensagem(decodificador)
+function enviartexto(parametro) {
+    if (parametro == 'criptografar') {
+        var mensagem = document.getElementById("texto").value;
+        var textoCriptografado = criptografar(mensagem);
+        exibirMensagem(textoCriptografado);
+    } else {
+        var mensagem = document.getElementById("texto").value;
+        var textoDesriptografado = descriptografar(mensagem);
+        exibirMensagem(textoDesriptografado);
+    }
 }
 
 function exibirMensagem(mensagem) {
