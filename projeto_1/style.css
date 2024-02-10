@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #F3F5FC;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+textarea::placeholder {
+    color: blue;
+    background-color: #F3F5FC;
+    font-size: 50px;
+}
+
+#texto {
+    position: absolute;
+    top: 10%;
+    /* Ajuste o valor conforme necessário */
+    left: 20%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+textarea {
+    background-color: #F3F5FC;
+    font-size: 50px;
+    width: 55%;
+    height: 45%;
+    /* border: none; */
+    color: blue;
+    resize: none;
+    outline: none;
+    word-wrap: break-word;
+}
+
+#aviso {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15%;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 4.3vh;
+    color: #F3F5FC;
+    background-color: #0A3871;
+    border: none;
+}
+
+.semfundo {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: solid #0A3871 2px;
+}
+
+#copy {
+    display: none;
+    margin-left: 26%;
+}
+
+.quadro {
+    position: absolute;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 2%;
+    right: 0;
+    padding: 15px 20px 15px 20px;
+    border-radius: 20px;
+    height: 70%;
+    width: 18%;
+    background-color: #fff;
+}
+
+#ilustracao {
+    width: 100%;
+    height: 50%;
+    /* border: solid blue 2px; */
+}
+
+/* Estilos para tablets com resolução entre 768 pixels e 1200 pixels */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    h2{
+        font-size: medium;
+    }
+    p{
+        font-size: small;
+    }
+    #logo {
+        width: 9%;
+        position: absolute;
+        left: 0;
+    }
+
+    #ilustracao {
+        display: none;
+    }
+
+    .quadro {
+        position: absolute;
+        text-align: center;
+        word-wrap: break-word;
+        bottom: 0;
+        padding: 15px 20px 15px 20px;
+        border-radius: 20px;
+        height: 15%;
+        width: 80%;
+        background-color: #fff;
+        left: 0;
+        margin-left: 8%;
+    }
+
+    .botoes {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 30%;
+        margin-bottom: 30%
+       
+    }
+
+    button {
+        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        font-size: 2.3vh;
+        color: #F3F5FC;
+        background-color: #0A3871;
+        border: none;
+    }
+
+    #copy {
+        display: none;
+        margin-left: 40%;
+    }
+
+    #texto {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    textarea::placeholder {
+        color: blue;
+        background-color: #F3F5FC;
+        font-size: 20px;
+    }
+
+    textarea {
+        background-color: #F3F5FC;
+        font-size: 20px;
+        width: 80%;
+        height: 35%;
+        /* border: none; */
+        color: blue;
+        resize: none;
+        outline: none;
+        word-wrap: break-word;
+    }
+
+    #aviso {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20%;
+    }
+
+}
+
+/* Estilos para dispositivos móveis com resolução menor que 768 pixels */
+@media only screen and (max-width: 767px) {
+    h2{
+        font-size: medium;
+    }
+    p{
+        font-size: small;
+    }
+    #logo {
+        width: 15%;
+        position: absolute;
+        left: 0;
+    }
+
+    #ilustracao {
+        display: none;
+    }
+
+    .quadro {
+        position: absolute;
+        text-align: center;
+        word-wrap: break-word;
+        bottom: 0;
+        padding: 15px 20px 15px 20px;
+        border-radius: 20px;
+        height: 15%;
+        width: 80%;
+        background-color: #fff;
+        left: 0;
+        margin-left: 5%;
+    }
+
+    .botoes {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-left: 10%; /* Manter a margem esquerda */
+        margin-bottom: 50%;
+        display: flex; /* Utilizar flexbox para alinhar os botões horizontalmente */
+        justify-content: center; /* Alinhar os botões ao centro horizontalmente */
+    }
+    
+    button {
+        margin-right: 10px; /* Adicionar margem direita entre os botões */
+        padding: 10px 20px; /* Ajustar o preenchimento dos botões */
+        border-radius: 20px;
+        font-size: 2.6vh;
+        color: #F3F5FC;
+        background-color: #0A3871;
+        border: none;
+    }
+
+    #copy {
+        display: none;
+        margin-left: 40%;
+    }
+
+    #texto {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    textarea::placeholder {
+        color: blue;
+        background-color: #F3F5FC;
+        font-size: 20px;
+    }
+
+    textarea {
+        background-color: #F3F5FC;
+        font-size: 20px;
+        width: 80%;
+        height: 35%;
+        /* border: none; */
+        color: blue;
+        resize: none;
+        outline: none;
+        word-wrap: break-word;
+    }
+
+    #aviso {
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10%;
+    }
+}
